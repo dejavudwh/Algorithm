@@ -1,0 +1,40 @@
+| Number | Title | Solution | Difficulty |
+|  ----  | ----  |   ----   |    ----    |
+|  189 | Rotate Array  |          |   Medium        |
+
+
+### 解题思路
+
+> 最常规的算法就是把数组所有的元素都移动到(i + k) mod n的位置上，但是这个方法需要额外的空间
+
+> 考虑空间复杂度为O(1)的算法，观察向右移动了k个位置的数组的规律实则可以用过三个逆置操作完成
+
+```
+[1,2,3,4,5,6,7]
+      ⬇ 先逆转整个数组
+[7,6,5,4,3,2,1]
+      ⬇ 逆转0, (k % n) - 1和(k % n), n - 1
+[5,6,7,1,2,3,4]
+```
+
+### 代码
+
+```java
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, (k % n) - 1);
+        reverse(nums, (k % n), n - 1);
+    }
+
+    public void reverse(int[] nums, int low, int high) {
+        for (int i = low, j = high; i < j; i++, j--) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+
+    }
+}
+```

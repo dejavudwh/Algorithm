@@ -1,0 +1,38 @@
+| Number | Title | Solution | Difficulty |
+|  ----  | ----  |   ----   |    ----    |
+|  41 | First Missing Positive  |          |   Hard        |
+
+
+### 解题思路
+
+> 常规思路就是遍历数组，对数组里的值，再创建一个新的数组进行打点newNums[Nums[i]] = 1，最后再遍历这个新数组即可
+
+> 考虑一个常数空间复杂度的算法，可以通过延续上面的思想，即把数组值和下标相对应起来，但是这里不使用新的数组，而是数组对应的值交换到对应的下标中，最后再遍历数组检查是否匹配。
+
+- 遍历数组
+- 如果当前数组的值对应的下标的值和对应下标不匹配，即交换（下标从1开始，也就是nums[0]对应的值应该是1
+- 再次遍历数组，如果下标和值不匹配，即是缺失的最小正整数
+- 如果遍历结束，缺失的最小正整数就是n + 1
+
+### 代码
+
+```java
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            while (nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i]) {
+                int temp = nums[nums[i] - 1];
+                nums[nums[i] - 1] = nums[i];
+                nums[i] = temp;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i + 1) {
+                return i + 1;
+            }
+        }
+        return n + 1;
+    }
+}
+```

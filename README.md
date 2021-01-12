@@ -8,10 +8,6 @@
 
 Examples from various algorithms related books
 
-### 2. leetcode
+### 2. leetcode-doc
 
-LeetCode's solution code
-
-### 3. doc
-
-Interpretation of the corresponding problem of Leetcode
+LeetCode's solution code and Interpretation of the corresponding problem of Leetcode
