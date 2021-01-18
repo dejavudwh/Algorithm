@@ -21,9 +21,9 @@
 | 243 |  ||  |  |
 | 244 |  ||  |  |
 | 245 |  ||  |  |
-| 217 | [Contains Duplicate](https://leetcode-cn.com/problems/contains-duplicate/) ||  |  |
-| 219 | [Contains Duplicate II](https://leetcode-cn.com/problems/contains-duplicate-ii/) ||  |  |
-| 220 | [Contains Duplicate III](https://leetcode-cn.com/problems/contains-duplicate-iii/) || | |
+| 217 | [Contains Duplicate](https://leetcode-cn.com/problems/contains-duplicate/) |[Go](0217.Contains-Duplicate.md)| Easy |  |
+| 219 | [Contains Duplicate II](https://leetcode-cn.com/problems/contains-duplicate-ii/) |[Go](0219.Contains-Duplicate-II.md)| Easy |  |
+| 220 | [Contains Duplicate III](https://leetcode-cn.com/problems/contains-duplicate-iii/) |[Go](0219.Contains-Duplicate-III.md)| | |
 | 55 | [Jump Game](https://leetcode-cn.com/problems/jump-game/) || | |
 | 45 | [ Jump Game II](https://leetcode-cn.com/problems/jump-game-ii/) || | |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) || | |
