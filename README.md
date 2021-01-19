@@ -1,3 +1,5 @@
+## × 该仓库已经迁移到个人知识库（[KnowledgeBase](https://github.com/dejavudwh/KnowledgeBase)）
+
 # Algorithm
 
 > Leetcode problem solving set and book examples
