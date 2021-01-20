@@ -1,4 +1,4 @@
-## × 该仓库已经迁移到个人知识库（[KnowledgeBase](https://github.com/dejavudwh/KnowledgeBase)）
+## × 该仓库已经迁移到个人知识库（[KnowledgeBase](https://github.com/dejavudwh/KnowledgeBase)）（暂时设为Privte)
 
 # Algorithm
 
